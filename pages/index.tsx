@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Ratio from '../components/Ratio';
-import Timer from '../components/Timer';
+import MyStopwatch from '../components/Timer';
 
 const Home: NextPage = () => {
   return (
@@ -14,15 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className='flex flex-col items-center justify-center h-screen border-2'>
-        <div className='flex justify-center w-56 gap-4 p-4 mt-4 text-white rounded-md bg-zinc-900'>
-          <p>Coffee Amount</p>
-          <input
-            className='w-10 text-center rounded-md text-zinc-300 bg-zinc-600'
-            type='number'
-          />
-        </div>
         <Ratio />
-        <Timer />
       </main>
     </div>
   );
