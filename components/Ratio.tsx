@@ -17,7 +17,26 @@ export default function Ratio() {
           type='number'
         />
       </div>
-      <table className='m-4 text-center text-white border-separate rounded-md table-auto border-spacing-2 w-80 bg-zinc-900 '>
+      <div className='flex justify-around py-4 m-4 text-center text-white rounded-md w-80 bg-zinc-900'>
+        <div>
+          <p className='text-2xl font-bold'>Ratio</p>
+          <p>1:12</p>
+          <p>1:13</p>
+          <p>1:14</p>
+          <p>1:15</p>
+          <p>1:16</p>
+        </div>
+        <div>
+          <p className='text-2xl font-bold'>Water</p>
+          <p>{coffeeAmount * 12}g</p>
+          <p>{coffeeAmount * 13}g</p>
+          <p>{coffeeAmount * 14}g</p>
+          <p>{coffeeAmount * 15}g</p>
+          <p>{coffeeAmount * 16}g</p>
+        </div>
+      </div>
+
+      {/* <table className='m-4 text-center text-white border-separate rounded-md table-auto border-spacing-2 w-80 bg-zinc-900 '>
         <thead>
           <tr>
             <th>Ratio</th>
@@ -38,7 +57,7 @@ export default function Ratio() {
             <td>{coffeeAmount * 14}</td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
     </>
   );
 }
